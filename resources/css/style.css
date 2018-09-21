@@ -1,0 +1,18 @@
+/* Universal */
+
+html, body {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Header */
+
+#overide nav .active a {
+  color: #399bd1;
+  background-color: transparent;
+}
+
+#overide nav li a {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
