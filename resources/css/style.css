@@ -9,6 +9,12 @@ main {
   margin-top: 3.6rem;
 }
 
+@media only screen and (max-width: 768px) {
+  main {
+    margin-top: 9.65rem;
+  }
+}
+
 #overide h2 {
   font-weight: bold;
   color: #399bd1;
@@ -79,6 +85,7 @@ main {
 .jumbotron .banner-header {
   font-family: 'Monoton';
   color: white;
+  text-align: center;
 }
 
 .jumbotron .banner-header h1 {
@@ -102,27 +109,11 @@ main {
   -1px -1px 0 #000;
 }
 
-/* .jumbotron .btn {
-  margin-top: 2.8rem;
-  padding-top: 1.3rem;
-  padding-bottom: 1.3rem;
-  width: 11.4rem;
-  font-size: 1.3rem;
+@media only screen and (max-width: 576px) {
+  .jumbotron .banner-header h1 {
+    font-size: 5.7rem;
+  }
 }
-
-.jumbotron .btn-primary {
-  background-color: #399bd1;
-  box-shadow: 0 0 3px rgba(0,0,0,0.5);
-  transition: box-shadow 500ms ease-out 70ms;
-}
-
-.jumbotron .btn-primary:hover {
-  box-shadow: 0 0 12px rgba(0,0,0,0.9);
-}
-
-.jumbotron .btn-primary:active {
-  box-shadow: 0 0 0 rgba(0,0,0,0.5);
-} */
 
 /* Featured Project */
 
@@ -143,10 +134,44 @@ main {
   color: rgba(0,0,0,0.7);
 }
 
+#featured-project .image-container {
+  height: 19rem;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 992px) {
+  #featured-project h3 {
+    margin-top: 1.5rem;
+  }
+}
+
 /* Projects */
 
 #projects .container {
   padding-bottom: 5.85rem;
+}
+
+#projects .image-container {
+  height: 13.5rem;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  #projects .container {
+    padding-bottom: 0;
+  }
+
+  #projects .col-xs-12 {
+    padding-bottom: 5.85rem;
+  }
+
+  #projects .image-container {
+    height: 13.5rem;
+  }
+
+  #projects img {
+    width: 100%;
+  }
 }
 
 /* Ending */
@@ -164,6 +189,7 @@ main {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1.4rem;
+  text-align: center;
 }
 
 #closer p {
