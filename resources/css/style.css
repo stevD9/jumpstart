@@ -26,8 +26,15 @@ main {
   font-weight: bold;
 }
 
-.image-container {
+.image-container img {
   opacity: .7;
+  transition: transform .5s, opacity .5s;
+}
+
+.image-container img:hover {
+  opacity: 1;
+  transform: scale(1.3);
+  cursor: pointer;
 }
 
 .btn {
