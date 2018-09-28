@@ -9,7 +9,7 @@ main {
   margin-top: 3.6rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   main {
     margin-top: 9.65rem;
   }
@@ -43,6 +43,7 @@ main {
   padding-bottom: 1.3rem;
   width: 11.4rem;
   font-size: 1.3rem;
+  border-radius: 6px;
 }
 
 .btn-primary {
@@ -74,12 +75,11 @@ main {
 
 /* Banner */
 
-.jumbotron {
-  padding: 11.85rem 0;
+#overide .jumbotron {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  height: 44rem;
 }
 
 .jumbotron-bike {
@@ -89,10 +89,32 @@ main {
   background-size: cover;
 }
 
+.jumbotron-beer {
+  background-image: url(../images/jumbotron-beer.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron-flowers {
+  background-image: url(../images/jumbotron-flowers.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron-duffel {
+  background-image: url(../images/jumbotron-duffel.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .jumbotron .banner-header {
   font-family: 'Monoton';
   color: white;
   text-align: center;
+  margin-top: 3rem;
 }
 
 .jumbotron .banner-header h1 {
@@ -116,13 +138,23 @@ main {
   -1px -1px 0 #000;
 }
 
+.relative-button {
+  text-align: center;
+  position: relative;
+  top: -16rem;
+}
+
 @media only screen and (max-width: 576px) {
   .jumbotron .banner-header h1 {
-    font-size: 5.7rem;
+    font-size: 4rem;
   }
 }
 
 /* Featured Project */
+
+#featured-project {
+  margin-top: -7rem;
+}
 
 #featured-project .row {
   margin-top: 1.45rem;
